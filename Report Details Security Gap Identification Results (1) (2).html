@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Details Security Gap Identification Results</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <p><strong>Hello,<br>
+The Google Support Team<br>
+Salam sejahtera,</strong></p>
+<hr>
+<p>Terima kasih atas kesempatan yang diberikan untuk memberikan klarifikasi lebih lanjut terkait laporan kerentanan pada program kompensasi Google Pixel 4a 4g. Berikut saya sampaikan penjelasan atas pertanyaan-pertanyaan yang telah diajukan:</p>
+<p><strong>1. Bagaimana Anda ingin disebutkan atau diakui dalam laporan ini?</strong><br>
+Saya ingin disebut sebagai Diva Lutfiando, pelapor bug pada perangkat Google Pixel 4a 4g. Saya melaporkan temuan ini secara individu, tanpa afiliasi perusahaan yang spesifik. sebelumnya saya memohon maaf karena saya tidak bisa memberikan bukti menggunakan Device google pixel 4a 4g saya kembali, dikarenakan saat pergantian batrai pixel 4a 4g tersebut kurang lancar, shingga menyebabkan LCD mengalami gangguan (blank screen).</p>
+<p><strong>2. Dapatkah Anda memberikan bukti konsep, termasuk kode sumber, untuk memverifikasi laporan ini?</strong><br>
+<strong>Proof of Concept (PoC) :</strong></p>
+<hr>
+<p>| Perangkat terdapat Bug Update System : Google Pixel 4a 4g<br>
+| Perangkat Pengujian Verifikasi Imei : Poco X6 5G<br>
+| Deskripsi : Ditemukannya celah keamanan pada proses pendaftaran reparasi Pixel 4a, yang memungkinkan pengguna untuk medaftarkan IMEI Pixel 4a tanpa memiliki device tersebut dan berhasil terverifikasi atau memenuhi syarat untuk mendapatkan reparasi berupa biaya kompensasi sebesar $50. yang mana pengguna dapat mencari IMEI Pixel 4a dengan mudah di internet (salah satunya menggunakan website generator random IMEI untuk Pixel 4a)</p>
+<p>Saya akan memberikan dokumentasi langkah Reproduksi dari celah keamanan ini.<br>
+<em>(dokumentasi vidio terpisah)</em><br>
+<strong>Langkah Reproduksi :</strong></p>
+<ol>
+<li>User mempunyai link seperti di bawah ini, link ini bisa dengan mudah di dapat pada forum jual device second yang melapirkan screenshoot bug update ini ataupun dari youtube.<br>
+<strong>Screenshoot pada battery information di Pixel 4a Milik saya, dan tampilan yang banyak tersebar :</strong><br>
+*Di bawah ini screenshoot nya<br>
+<a href="https://drive.google.com/file/d/1-n6gH-5tmeWsLpVmQ3i8Gmj9NlDwbD7M/view?usp=drivesdk">https://drive.google.com/file/d/1-n6gH-5tmeWsLpVmQ3i8Gmj9NlDwbD7M/view?usp=drivesdk</a></li>
+</ol>
+<p><strong>Link Resmi dari Pixel 4a:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://g.co/pixel/4abattery">https://g.co/pixel/4abattery</a></td>
+<td><a href="https://support.google.com/pixelphone/workflow/15642495?sjid=9428447317456706958-NC&amp;visit_id=638763273690293220-46934770&amp;p=pixel4a_battery_help&amp;rd=1">https://support.google.com/pixelphone/workflow/15642495?sjid=9428447317456706958-NC&amp;visit_id=638763273690293220-46934770&amp;p=pixel4a_battery_help&amp;rd=1</a></td>
+</tr>
+</tbody>
+</table><ol start="2">
+<li>Setelah Link terbuka, user klik (<em>Memeriksa Kelayakan Akun</em>). Kemudian pilih akun gmail yang akan digunakan untuk didaftarkan untuk klaim kompensasi tersebut.<br>
+Screenshoot step :</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEP 1</td>
+<td><a href="https://drive.google.com/file/d/10R0GGs5VX6sq1oshIh5yDOMrv20FWSJA/view?usp=drivesdk">https://drive.google.com/file/d/10R0GGs5VX6sq1oshIh5yDOMrv20FWSJA/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td>STEP 2</td>
+<td><a href="https://drive.google.com/file/d/10RH5IFmMJQ05XELkNESMbXJiza46Wrud/view?usp=drivesdk">https://drive.google.com/file/d/10RH5IFmMJQ05XELkNESMbXJiza46Wrud/view?usp=drivesdk</a></td>
+</tr>
+</tbody>
+</table><ol start="3">
+<li>
+<p>Lalu masuk tab browser lain, untuk mengambil IMEI yang bisa di dapatkan dari website Random IMEI Generator ini ( <a href="https://www.imei.info/imei-generator/">https://www.imei.info/imei-generator/</a> ) dan pilih IMEI untuk Pixel 4a setelah itu Generate.</p>
+</li>
+<li>
+<p>Setelah Klik Generate IMEI untuk Pixel 4a, akan keluar beberapa IMEI RANDOM, yang bisa digunakan untuk proses pengecekan kelayakan menerima kompensasi.</p>
+</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEP 3 (input IMEI)</td>
+<td><a href="https://drive.google.com/file/d/10WSiljZYmnhUopk02H4FNgjfAeol1WwZ/view?usp=drivesdk">https://drive.google.com/file/d/10WSiljZYmnhUopk02H4FNgjfAeol1WwZ/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td>STEP 4 (Generate IMEI</td>
+<td><a href="https://drive.google.com/file/d/10mYilQHkkIIdih-hqKvVdQS_QxPf_BNC/view?usp=drivesdk">https://drive.google.com/file/d/10mYilQHkkIIdih-hqKvVdQS_QxPf_BNC/view?usp=drivesdk</a></td>
+</tr>
+</tbody>
+</table><ol start="5">
+<li>Setelah generate IMEI dan input IMEI kedalam form yg sudah ditentukan. Dan akan muncul konfirmasi bahwa <em>Email Terhubung keperangkat ataupun Tidak</em>.<br>
+Step ini adalah proses verifikasi IMEI, Apakah terhubung ke perangkat atau tidak. Namun terhubung atau tidak pun ternyata bisa lolos verifikasi, dan IMEI yg di daftarkan pun IMEI dari website generator random IMEI.</li>
+</ol>
+<p>Kesimpulan : User bisa melakukan pendaftaran tanpa memiliki device Pixel 4a dan resmi atau tidaknya, tetap lolos verifikasi pada tahap tersebut. Pada tahap inilah yg memungkinkan user melakukan permintaan terus menerus dengan mudah dan merugikah pihak penyedia kompensasi (<em>google support</em>)</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEP Verifikasi IMEI</td>
+<td><a href="https://drive.google.com/file/d/110oxmC91T-40dI9Qz2zOPKLLezD30-Kh/view?usp=drivesdk">https://drive.google.com/file/d/110oxmC91T-40dI9Qz2zOPKLLezD30-Kh/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td>STEP isi data diri</td>
+<td>1. <a href="https://drive.google.com/file/d/1124yNJ5n5IlG6Lx6MSyYgLsYTS1YSWNT/view?usp=drivesdk">https://drive.google.com/file/d/1124yNJ5n5IlG6Lx6MSyYgLsYTS1YSWNT/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td></td>
+<td>2. <a href="https://drive.google.com/file/d/113hoj6VGgICe9HVWj_3IYRHV41WVhCXi/view?usp=drivesdk">https://drive.google.com/file/d/113hoj6VGgICe9HVWj_3IYRHV41WVhCXi/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td></td>
+<td>3. <a href="https://drive.google.com/file/d/113pdwA20bPv3UgPG4jKymFfA5VsN1SgN/view?usp=drivesdk">https://drive.google.com/file/d/113pdwA20bPv3UgPG4jKymFfA5VsN1SgN/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td></td>
+<td>4. <a href="https://drive.google.com/file/d/11B9z0Rwy4gwzFGN1ZuMvSwDeBnfW8ciu/view?usp=drivesdk">https://drive.google.com/file/d/11B9z0Rwy4gwzFGN1ZuMvSwDeBnfW8ciu/view?usp=drivesdk</a></td>
+</tr>
+<tr>
+<td>STEP Lolos Verif IMEI</td>
+<td><a href="https://drive.google.com/file/d/11CJWIes9I3Pyfvn6mgIbKa86RwFstjwr/view?usp=drivesdk">https://drive.google.com/file/d/11CJWIes9I3Pyfvn6mgIbKa86RwFstjwr/view?usp=drivesdk</a></td>
+</tr>
+</tbody>
+</table><p><strong>Dampak Keamanan</strong></p>
+<ol>
+<li>
+<p><strong>Penyalahgunaan Program Kompensasi</strong></p>
+<ul>
+<li>Pengguna yang tidak memiliki perangkat Google Pixel 4a dapat dengan mudah mendaftarkan diri menggunakan IMEI palsu dan mendapatkan kompensasi secara ilegal.</li>
+</ul>
+</li>
+<li>
+<p><strong>Kerugian Finansial bagi Google</strong></p>
+<ul>
+<li>Sistem yang tidak memverifikasi IMEI dengan baik memungkinkan banyak klaim palsu, menyebabkan Google mengeluarkan dana kompensasi untuk pihak yang tidak berhak.</li>
+</ul>
+</li>
+<li>
+<p><strong>Potensi Pemalsuan Identitas</strong></p>
+<ul>
+<li>Pelaku dapat menggunakan berbagai identitas, email, dan akun bank yang berbeda untuk melakukan klaim berulang tanpa kendala.</li>
+</ul>
+</li>
+<li>
+<p><strong>Penyalahgunaan Lebih Lanjut oleh Pihak Ketiga</strong></p>
+<ul>
+<li>Jika eksploitasi ini diketahui secara luas, akan ada lebih banyak orang yang mencoba menyalahgunakan program ini, meningkatkan jumlah kerugian yang terjadi.</li>
+</ul>
+</li>
+<li>
+<p><strong>Risiko bagi Pemilik IMEI Asli</strong></p>
+<ul>
+<li>IMEI asli yang telah digunakan oleh pihak lain dalam sistem ini mungkin mengalami kendala saat pemilik sebenarnya mencoba mendaftar atau mengklaim kompensasi.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Rekomendasi Perbaikan</strong></p>
+<ol>
+<li>
+<p><strong>Validasi IMEI dengan Database Resmi</strong></p>
+<ul>
+<li>Google harus mengintegrasikan sistem verifikasi IMEI dengan database resmi untuk memastikan hanya perangkat yang sah yang dapat mengajukan klaim.</li>
+</ul>
+</li>
+<li>
+<p><strong>Autentikasi Tambahan pada Pendaftaran</strong></p>
+<ul>
+<li>Wajibkan pengguna untuk masuk dengan akun Google yang sudah lama terhubung dengan perangkat Pixel 4a yang IMEI-nya didaftarkan.</li>
+</ul>
+</li>
+<li>
+<p><strong>Verifikasi Perangkat Fisik</strong></p>
+<ul>
+<li>Terapkan metode verifikasi tambahan, seperti meminta pengguna mengunggah tangkapan layar dari perangkat mereka yang menunjukkan IMEI di <em>Settings &gt; About Phone</em>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Peningkatan Keamanan pada Formulir Pendaftaran</strong></p>
+<ul>
+<li>Batasi jumlah klaim per akun dan lakukan pengecekan silang dengan data pengguna untuk menghindari penyalahgunaan.</li>
+</ul>
+</li>
+<li>
+<p><strong>Audit dan Monitoring Sistem secara Berkala</strong></p>
+<ul>
+<li>Google perlu melakukan audit keamanan secara berkala untuk mendeteksi pola penyalahgunaan dan segera menutup celah keamanan yang ditemukan.</li>
+</ul>
+</li>
+</ol>
+<p>Dengan menerapkan langkah-langkah ini, Google dapat mengurangi risiko eksploitasi program kompensasi dan memastikan bahwa bantuan hanya diberikan kepada pengguna yang benar-benar berhak.</p>
+<p><strong>3. Screen Recorder Tahap Reproduksi Kerentanan</strong><br>
+Saya sudah melakukan screenrecorder dan saya upload ke googledrive, di bawah ini link nya :</p>
+<p>*Link Drive<br>
+<a href="https://drive.google.com/file/d/10oYL0dQu_WuxrON4s7sDFkvb4BKTWzZX/view?usp=drivesdk">https://drive.google.com/file/d/10oYL0dQu_WuxrON4s7sDFkvb4BKTWzZX/view?usp=drivesdk</a></p>
+<p><strong>4. Di perangkat apa masalah ini terjadi?</strong><br>
+Kerentanan ini atau masalah ini terjadi pada :</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Device</td>
+<td>Google Pixel 4a</td>
+</tr>
+<tr>
+<td>Versi Patch Keamanan</td>
+<td>February 1, 2025 (Google Play system update) , Getting the Battery Health “Dead” Bug.</td>
+</tr>
+<tr>
+<td>Versi Build Number perangkat</td>
+<td>Maaf saya tidak bisa melampirkan karna tidak sempat screenshoot dikarenakan lcd pixel 4a saya rusak saat mengganti batrai</td>
+</tr>
+</tbody>
+</table><p><strong>5. Anda menyatakan bahwa “kerentanan ini bersifat publik atau diketahui pihak ketiga”.??</strong><br>
+Kerentanan ini di temukan oleh saya sendiri berdasarkan update yang saya dapat dan saya menerima BUG, dan saya melakukan analisis menggunakan basic cyber security yang saya pelajari sendiri. Dan menemukan kerentanan tersebut.</p>
+<p>Jika anda bertanya kerentanan ini bersifat publik atau tidak? Bisa jadi user pixel lain mengetahui kerentanan ini, dan mereka mencobannya.</p>
+<p><em>Notes : Saya sudah melakukan penelitian lebih lanjut, dengan mencoba mendaftarkan banyak akun email dan akun bank berbeda dan berhasil lolos verifikasi data dan bank. Dan sudah memasuki tahap menunggu penerimaan dana kompensasi pada aplikasi Payoneer</em></p>
+<p>Mungkin ini informasi detail yang bisa saya berikan, silahkan disimak dengan baik.</p>
+<p>Anda bisa meninjau laporan yang saya buat kembali pada link di bawah ini :<br>
+<a href="https://drive.google.com/file/d/11HZvsnp8i0MmVgcp0kfaZwjnyJZMTamN/view?usp=drivesdk">https://drive.google.com/file/d/11HZvsnp8i0MmVgcp0kfaZwjnyJZMTamN/view?usp=drivesdk</a></p>
+<p>Terima kasih<br>
+Diva Lutfiando</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
