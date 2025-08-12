@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_Pixel_logo.png" alt="Google Pixel Banner" width="600">
+</p>
+
+
 # 🔐 Critical Security Gap in Google Pixel 4a Battery Compensation Program
 
 ![Status](https://img.shields.io/badge/status-under%20review-yellow)
