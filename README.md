@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_Pixel_logo.png" alt="Google Pixel Banner" width="600">
+  <img src="./pxl.jpg" alt="Google Pixel Banner" width="600">
 </p>
 
 
