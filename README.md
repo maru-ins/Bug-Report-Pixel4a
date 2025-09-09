@@ -70,7 +70,7 @@ This repository documents the discovery of a critical security vulnerability wit
 | **Risk Level**     | High                                                       |
 | **CVSS v3.1 Score**| 7.5–8.0                                                    |
 | **Defect Types**   | User Fraud, Identity Exploit, Financial Misuse             |
-| **Test Device**    |                          |
+| **Test Device**    | Google Pixel 4a         |
 
 ---
 
