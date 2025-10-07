@@ -22,7 +22,7 @@ This repository documents the discovery of a critical security vulnerability wit
 
 ## 👤 Reporter Information
 
-- **Name:** maruins
+- **Name:** Diva Lutfiando
 - **Email:** /  
 - **Date of Analysis:** 15–20 March 2025  
 - **Device Used:** Google Pixel 4a 4G *(original)* and Poco X6 5G *(testing)*  
